@@ -148,7 +148,7 @@ Rectangle {
                             Image {
                                 id: newsImg
                                 anchors.centerIn: parent
-                                sourceSize: Qt.size(40, 40)
+                                sourceSize: Qt.size(48, 48)
                                 mipmap: true
                                 visible: false
                                 source: "qrc:/gpt4all/icons/gpt4all_transparent.svg"
@@ -224,7 +224,7 @@ Rectangle {
                     MyFancyLink {
                         text: qsTr("Documentation")
                         imageSource: "qrc:/gpt4all/icons/info.svg"
-                        onClicked: { Qt.openUrlExternally("https://docs.gpt4all.io/gpt4all_chat.html") }
+                        onClicked: { Qt.openUrlExternally("https://docs.gpt4all.io/") }
                     }
 
                     MyFancyLink {

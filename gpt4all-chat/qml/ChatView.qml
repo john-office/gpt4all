@@ -61,7 +61,7 @@ Rectangle {
                      + "<li>Check the model file is complete in the download folder"
                      + "<li>You can find the download folder in the settings dialog"
                      + "<li>If you've sideloaded the model ensure the file is not corrupt by checking md5sum"
-                     + "<li>Read more about what models are supported in our <a href=\"https://docs.gpt4all.io/gpt4all_chat.html\">documentation</a> for the gui"
+                     + "<li>Read more about what models are supported in our <a href=\"https://docs.gpt4all.io/\">documentation</a> for the gui"
                      + "<li>Check out our <a href=\"https://discord.gg/4M2QFmTt2k\">discord channel</a> for help")
     }
 
@@ -789,19 +789,16 @@ Rectangle {
                                 Item {
                                     Layout.row: 0
                                     Layout.column: 0
-                                    Layout.alignment: Qt.AlignTop
-                                    Layout.preferredWidth: 38
-                                    Layout.preferredHeight: 38
+                                    Layout.alignment: Qt.AlignVCenter | Qt.AlignRight
+                                    Layout.preferredWidth: 32
+                                    Layout.preferredHeight: 32
                                     Image {
                                         id: logo
-                                        width: 38
-                                        height: 38
-                                        sourceSize.width: 64
-                                        sourceSize.height: 64
+                                        sourceSize: Qt.size(32, 32)
                                         fillMode: Image.PreserveAspectFit
                                         mipmap: true
                                         visible: false
-                                        source: name !== qsTr("Response: ") ? "qrc:/gpt4all/icons/you.svg" : "qrc:/gpt4all/icons/alt_logo.svg"
+                                        source: name !== qsTr("Response: ") ? "qrc:/gpt4all/icons/you.svg" : "qrc:/gpt4all/icons/gpt4all_transparent.svg"
                                     }
 
                                     ColorOverlay {
